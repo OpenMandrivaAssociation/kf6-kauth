@@ -27,6 +27,7 @@ BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(KF6CoreAddons)
+BuildRequires: polkit-qt6-1-devel
 Requires: %{libname} = %{EVRD}
 
 %description
@@ -84,3 +85,4 @@ Execute actions as privileged user
 %{_libdir}/libKF6AuthCore.so*
 %{_libdir}/libKF6AuthWidgets.so*
 %{_qtdir}/plugins/kf6/kauth
+%{_libdir}/libexec/kauth
