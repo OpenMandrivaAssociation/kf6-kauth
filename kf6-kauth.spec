@@ -1,6 +1,6 @@
 %define libname %mklibname KF6Auth
 %define devname %mklibname KF6Auth -d
-%define git 20230608
+%define git 20230609
 
 Name: kf6-kauth
 Version: 5.240.0
