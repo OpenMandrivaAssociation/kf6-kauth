@@ -1,6 +1,6 @@
 %define libname %mklibname KF6Auth
 %define devname %mklibname KF6Auth -d
-%define git 20230802
+%define git 20230811
 
 Name: kf6-kauth
 Version: 5.240.0
@@ -75,14 +75,11 @@ Execute actions as privileged user
 %files -n %{devname}
 %{_includedir}/KF6/KAuth
 %{_includedir}/KF6/KAuthCore
-%{_includedir}/KF6/KAuthWidgets
 %{_libdir}/cmake/KF6Auth
-%{_qtdir}/mkspecs/modules/qt_KAuth.pri
 %{_qtdir}/mkspecs/modules/qt_KAuthCore.pri
 %{_qtdir}/doc/KF6Auth.*
 
 %files -n %{libname}
 %{_libdir}/libKF6AuthCore.so*
-%{_libdir}/libKF6AuthWidgets.so*
 %{_qtdir}/plugins/kf6/kauth
 %{_libdir}/libexec/kauth
