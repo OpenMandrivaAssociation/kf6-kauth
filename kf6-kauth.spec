@@ -29,6 +29,7 @@ BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: polkit-qt6-1-devel
 Requires: %{libname} = %{EVRD}
+Requires: kauth-policy-gen = %{EVRD}
 
 %description
 Execute actions as privileged user
@@ -50,6 +51,15 @@ Requires: %{libname} = %{EVRD}
 Development files (Headers etc.) for %{name}.
 
 Execute actions as privileged user
+
+# This is split out so KF5 can use it too.
+# It can be merged back into the main package once we drop KF5.
+%package -n kauth-policy-gen
+Summary: kauth policy generator
+Group: System/Libraries
+
+%description -n kauth-policy-gen
+kauth policy generator
 
 %prep
 %autosetup -p1 -n kauth-%{?git:master}%{!?git:%{version}}
@@ -82,4 +92,6 @@ Execute actions as privileged user
 %files -n %{libname}
 %{_libdir}/libKF6AuthCore.so*
 %{_qtdir}/plugins/kf6/kauth
+
+%files -n kauth-policy-gen
 %{_libdir}/libexec/kauth
