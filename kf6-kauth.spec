@@ -33,6 +33,7 @@ BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(KF6CoreAddons)
+BuildRequires: cmake(KF6WindowSystem)
 BuildRequires: polkit-qt6-1-devel
 Requires: %{libname} = %{EVRD}
 
