@@ -7,7 +7,7 @@
 
 Name: kf6-kauth
 Version: 6.2.0
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kauth/-/archive/master/kauth-master.tar.bz2#/kauth-%{git}.tar.bz2
 %else
