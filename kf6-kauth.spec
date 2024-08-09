@@ -6,7 +6,7 @@
 #define git 20240217
 
 Name: kf6-kauth
-Version: 6.4.0
+Version: 6.5.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kauth/-/archive/master/kauth-master.tar.bz2#/kauth-%{git}.tar.bz2
